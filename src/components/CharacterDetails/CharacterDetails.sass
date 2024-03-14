@@ -1,0 +1,32 @@
+.character
+    width: 300px
+    height: 500px
+    position: relative
+    overflow: hidden
+    box-shadow: 0px 0px 1em black
+    &:hover .details
+        transform: translateY(0%)
+    img
+        width: 100%
+        height: 100%
+        filter: saturate(0%)
+    .details
+        position: absolute
+        background-color: black
+        color: white
+        bottom: 0
+        width: 100%
+        transition: all 0.5s
+        transform: translateY(100%)
+        padding-block: 20px
+        h2
+            text-align: center
+        h5
+            padding-inline: 10px
+            margin-top: 5%
+            span
+                font-weight: 100
+@media (max-width: 576px)
+    .character
+        .details
+            transform: translateY(0%)

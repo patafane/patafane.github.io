@@ -1,0 +1,53 @@
+.detailsManga
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    min-height: 100vh
+    background-image: url("./../../assets/img/test.png")
+    .content
+        margin-top: 50px
+        margin-inline: 100px
+        padding: 10px
+        background-color: white
+        .infos
+            display: flex
+            gap: 20px
+            .mainInfos
+                width: 80%
+                .titre
+                    display: flex
+                    justify-content: space-between
+                    .rating
+                        font-weight: 100
+                        display: flex
+                        align-items: center
+                        gap: 15px
+                        svg
+                            color: rgb(236, 204, 25)
+                h3
+                    margin-block: 20px
+                    span
+                        font-weight: 100
+                h2
+                    margin-block: 20px
+                p
+                    margin-block: 20px
+            .imgContainer
+                width: 20%
+                img
+                    width: 100%
+@media (max-width: 576px)
+    .detailsManga
+        .content
+            margin-inline: 10px
+            margin-top: 10px
+            .infos
+                flex-direction: column-reverse
+                justify-content: center
+                align-items: center
+                .mainInfos
+                    width: 100%
+                    h1
+                        font-size: 1.5rem
+                .imgContainer
+                    width: 150px

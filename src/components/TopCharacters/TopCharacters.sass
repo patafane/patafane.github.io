@@ -1,0 +1,59 @@
+.topCharacters
+    .content
+        padding-inline: 20px
+        background-image: url("./../../assets/img/heroes.webp")
+        background-size: cover
+        background-repeat: no-repeat
+        background-attachment: fixed
+        min-height: 100vh
+        .inputs
+            display: flex
+            padding-inline: 22%
+            padding-top: 20px
+            input
+                border: solid 1px black
+                outline: 0
+                border-radius: 20px 
+                padding-inline: 10px
+                margin-inline: 10px
+        .characters
+            margin-top: 20px
+            display: grid
+            grid-template-columns: auto auto auto auto
+            justify-content: center
+            row-gap: 20px
+            column-gap: 50px
+            padding-bottom: 50px
+@media (max-width: 576px)
+    .topCharacters
+        .content
+            .inputs
+                justify-content: center
+                align-items: center
+                gap: 20px
+            .characters
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
+@media (min-width: 576px) and (max-width: 768px)
+    .topCharacters
+        .content
+            .inputs
+                justify-content: center
+                align-items: center
+                gap: 20px
+            .characters
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
+@media (min-width: 768px) and (max-width: 1365px)
+    .topCharacters
+        .content
+            .inputs
+                justify-content: center
+                align-items: center
+                gap: 20px
+            .characters
+                display: flex
+                justify-content: center
+                flex-wrap: wrap

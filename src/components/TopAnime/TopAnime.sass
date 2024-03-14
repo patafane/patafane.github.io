@@ -1,0 +1,53 @@
+.topAnime
+    .content
+        padding-inline: 20px
+        background-image: url("./../../assets/img/test2.jpg")
+        background-size: cover
+        background-repeat: no-repeat
+        background-attachment: fixed
+        min-height: 100vh
+        .inputs
+            display: flex
+            justify-content: space-between
+            padding-inline: 22%
+            padding-top: 20px
+            flex-wrap: wrap
+            input
+                border: solid 1px black
+                outline: 0
+                border-radius: 20px 
+                padding-inline: 10px
+                margin-inline: 10px
+        .animes
+            margin-top: 20px
+            display: grid
+            grid-template-columns: auto auto
+            justify-content: center
+            row-gap: 20px
+            column-gap: 50px
+            padding-bottom: 50px
+@media (max-width: 576px)
+    .topAnime
+        .content
+            .inputs
+                justify-content: center
+                align-items: center
+                gap: 20px
+            .animes
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
+@media (min-width: 576px) and (max-width: 768px)
+    .topAnime
+        .content
+            .animes
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
+@media (min-width: 768px) and (max-width: 1068px)
+    .topAnime
+        .content
+            .animes
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
